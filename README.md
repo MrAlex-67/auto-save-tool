@@ -41,8 +41,9 @@ pip install pywin32
 
 # 3. 启动工具 / Launch the tool
 python auto_save.py
+```
 
-方式二：打包为 .exe（推荐给日常用户）/ Option 2: Package as .exe (Recommended for Daily Users)
+### 方式二：打包为 .exe（推荐给日常用户）/ Option 2: Package as .exe (Recommended for Daily Users)
 无需安装 Python 环境，双击即可运行 / No Python environment required, just double-click to run:
 ```bash
 # 1. 安装打包工具 / Install packaging tool
@@ -65,20 +66,30 @@ pyinstaller --onefile --noconsole --icon=app.ico --name "AutoSaveTool" auto_save
 | `HOTKEY_TOGGLE` | `Ctrl+Shift+S` | 暂停/恢复自动保存的快捷键 |
 | `EXCLUDE_APPS` | `["notepad.exe"]` | 排除列表（这些程序不触发自动保存） |
 
-###常见问题 / FAQ
-#Q: 杀毒软件报毒怎么办？ / My antivirus software flags it as a virus. What should I do?
-A: PyInstaller 打包的 exe 可能被误报。请查看源码确认安全后，添加信任或自行打包。我们承诺代码 100% 透明。
-A: Executables packaged with PyInstaller are sometimes flagged as false positives. Please review the source code to confirm its safety, then add it to your trust list or package it yourself. We promise the code is 100% transparent.
-#Q: 支持 macOS / Linux 吗？ / Does it support macOS / Linux?
-A: 当前版本仅支持 Windows。macOS/Linux 适配已在规划中，欢迎 PR 贡献！
-A: The current version only supports Windows. macOS/Linux adaptation is in the planning stages—PR contributions are welcome!
-#Q: 会自动覆盖我的文件吗？ / Will it automatically overwrite my files?
-A: 本工具仅模拟按键操作，保存逻辑完全由目标应用程序自身决定（如 Word 的自动保存、VSCode 的即时写入等），不会产生额外副本。
-A: This tool only simulates keystrokes. The saving logic is entirely determined by the target application itself (e.g., Word's auto-save, VSCode's instant write), so it won't create extra copies.
-###贡献与反馈 / Contribution & Feedback
+
+
+### 常见问题 / FAQ
+
+## Q: 杀毒软件报毒怎么办？ / My antivirus software flags it as a virus. What should I do?
+
+A: PyInstaller 打包的 exe 可能被误报。请查看源码确认安全后，添加信任或自行打包。我们承诺代码 100% 透明。 Executables packaged with PyInstaller are sometimes flagged as false positives. Please review the source code to confirm its safety, then add it to your trust list or package it yourself. We promise the code is 100% transparent.
+
+## Q: 支持 macOS / Linux 吗？ / Does it support macOS / Linux?
+
+A: 当前版本仅支持 Windows。macOS/Linux 适配已在规划中，欢迎 PR 贡献！The current version only supports Windows. macOS/Linux adaptation is in the planning stages—
+PR contributions are welcome!
+
+## Q: 会自动覆盖我的文件吗？ / Will it automatically overwrite my files?
+
+A: 本工具仅模拟按键操作，保存逻辑完全由目标应用程序自身决定（如 Word 的自动保存、VSCode 的即时写入等），不会产生额外副本。This tool only simulates keystrokes. The saving logic is entirely determined by the target application itself (e.g., Word's auto-save, VSCode's instant write), so it won't create extra copies.
+
+### 贡献与反馈 / Contribution & Feedback
+
 发现 Bug？有新想法？欢迎提交 Issue 或 Pull Request！
 Found a bug? Have a new idea? Feel free to submit an Issue or Pull Request!
+
 如果这个小工具帮到了你，请点个 Star 鼓励一下～
 If this little tool helped you, please give it a Star to show your support~
-#愿你的每一份努力，都被温柔存档。 ️
-#May every bit of your effort be gently archived. ️
+
+# 愿你的每一份努力，都被温柔存档。 ️
+# May every bit of your effort be gently archived. ️
