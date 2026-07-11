@@ -35,6 +35,7 @@ pip install pywin32
 
 # 3. 启动工具
 python 自动保存.py
+```
 
 方式二：打包为 .exe（推荐给日常用户）
 无需安装 Python 环境，双击即可运行：
@@ -45,11 +46,12 @@ pip install pyinstaller
 
 # 2. 一键打包（无控制台窗口 + 单文件）
 pyinstaller --onefile --noconsole --name "AutoSaveTool" 自动保存.py
-
+```
 ✅ 生成的 AutoSaveTool.exe 位于 dist/ 文件夹中，可复制到任意 Windows 电脑直接使用。
 💡 进阶打包（添加自定义图标）：
 ```bash
 pyinstaller --onefile --noconsole --icon=app.ico --name "AutoSaveTool" 自动保存.py
+```
 #⚙️ 配置说明
 打开 自动保存.py，修改顶部常量即可自定义行为：
 | 参数 | 默认值 | 说明 |
